@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.activities.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login Detail"
+            android:textSize="30sp"
+            android:fontFamily="@font/sfpro_bold"
+            android:textColor="@color/Black"
+            android:layout_marginTop="-130dp"/>
+
+
+        <TextView
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your full name \nand phone number"
+            android:textSize="16sp"
+            android:fontFamily="@font/sfpro_medium"
+            android:layout_marginTop="15dp"/>
+
+        <RelativeLayout
+            android:elevation="10dp"
+            android:id="@+id/rlname"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:background="@drawable/question_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/fullname" />
+
+            <View
+
+                android:layout_toRightOf="@+id/image"
+                android:layout_marginStart="11dp"
+                android:id="@+id/seprate"
+                android:layout_centerVertical="true"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@drawable/line_gradient_color"/>
+
+
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:layout_toRightOf="@+id/seprate"
+                android:background="@color/trancparent_white"
+                android:hint="Full Name"
+                android:imeOptions="actionNext"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/h18" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlphone"
+            android:elevation="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:background="@drawable/login_fields_unchecked"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/phone" />
+
+            <View
+
+                android:layout_toRightOf="@+id/image1"
+                android:layout_marginStart="11dp"
+                android:id="@+id/seprate1"
+                android:layout_centerVertical="true"
+                android:layout_width="1dp"
+                android:layout_height="35dp"
+                android:background="@drawable/line_gradient_color"/>
+
+
+            <EditText
+                android:id="@+id/phoneno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:layout_toRightOf="@+id/seprate1"
+                android:background="@color/trancparent_white"
+                android:hint="Phone Number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColor="@color/Black"
+                android:textSize="@dimen/h18" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="25dp">
+
+            <RadioButton
+                android:id="@+id/rbdeveloper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Developer"
+                android:textSize="@dimen/sp_18" />
+
+
+            <RadioButton
+                android:id="@+id/rbqa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sfpro_medium"
+                android:text="Quality Assurance"
+                android:textSize="18sp" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginStart="@dimen/dp_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select the job role"
+            android:textSize="16sp"
+            android:fontFamily="@font/sfpro_medium"
+            android:layout_marginTop="15dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginEnd="@dimen/dp_15"
+            android:layout_marginStart="@dimen/dp_15"
+            android:background="@drawable/question_background">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="@dimen/dp_15"
+                android:dropDownSelector="@color/dark_gray"
+                android:spinnerMode="dropdown" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/save"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/circular_purple_round"
+            android:layout_gravity="center_horizontal"
+            android:paddingRight="20dp"
+            android:paddingLeft="@dimen/dp_20"
+
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_50">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dp_15"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sfpro_light"
+                android:text="@string/save"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

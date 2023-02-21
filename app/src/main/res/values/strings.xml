@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aptitude Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save"><![CDATA[Save & Continue]]></string>
+    <string name="introduction">This is a mixed aptitude test. This test consists of 100 questions with a time limit of 40 minutes. You are able to ship a question and return it to later.</string>
+</resources>

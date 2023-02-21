@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_click"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu"
+        android:enabled="true"
+        android:icon="@drawable/in_hand"
+        android:title="CIH"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/news"
+        android:enabled="true"
+        android:title="Post"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/donatioins"
+        android:enabled="true"
+        android:icon="@drawable/donations_click"
+        android:title="Donations"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/deposits"
+        android:enabled="true"
+        android:icon="@drawable/deposits_click"
+        android:title="Deposits"
+        app:showAsAction="ifRoom" />
+</menu>
